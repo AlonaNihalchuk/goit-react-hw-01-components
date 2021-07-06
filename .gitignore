@@ -2,6 +2,7 @@
 
 #Junk
 .vscode/
+# test
 
 # dependencies
 /node_modules
