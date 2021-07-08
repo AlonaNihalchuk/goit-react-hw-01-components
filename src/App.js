@@ -22,4 +22,9 @@ function App() {
   );
 }
 
+// "lint-staged": {
+//   "*.{js, jsx}": "eslint --cache --fix",
+//   "*.{js,jsx,css,md,scss}": "prettier --write"
+// }
+
 export default App;
