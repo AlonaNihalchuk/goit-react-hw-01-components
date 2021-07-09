@@ -1,30 +1,38 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import React from 'react';
+// import ReactDom from 'react-dom';
+import PaintingList from './components/PaintingList';
+import paintings from './paintings.json';
+import Section from './components/Section';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+    <div>
+      <Section title="top week">
+        <PaintingList items={paintings} />
+      </Section>
+      <Section title="top month" />
     </div>
   );
 }
-
-// "lint-staged": {
-//   "*.{js, jsx}": "eslint --cache --fix",
-//   "*.{js,jsx,css,md,scss}": "prettier --write"
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React!
+//         </a>
+//       </header>
+//     </div>
+//   );
 // }
-
-export default App;
