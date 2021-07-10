@@ -44,15 +44,35 @@
 import userData from './components/Profile/user.json';
 import Profile from './components/Profile/Profile';
 
+import statisticalData from './components/Statistics/statistical-data.json';
+import Statistics from './components/Statistics/Statistics';
+
+// import StatisticalSection from './components/Statistics/StatisticalSection';
+// import StatisticsList from './components/Statistics/StatisticsList';
+
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
+
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './components/TransactionHistory/transactions.json';
+
 function App() {
   return (
-    <Profile
-      name={userData.name}
-      tag={userData.tag}
-      location={userData.location}
-      avatar={userData.avatar}
-      stats={userData.stats}
-    />
+    <div>
+      <Profile
+        name={userData.name}
+        tag={userData.tag}
+        location={userData.location}
+        avatar={userData.avatar}
+        stats={userData.stats}
+      />
+      {/* <StatisticalSection title="Upload stats">
+        <StatisticsList stats={statisticalData} />
+      </StatisticalSection> */}
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
+    </div>
   );
 }
 
