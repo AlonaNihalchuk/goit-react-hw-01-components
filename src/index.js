@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 
 // video repeta 1
@@ -58,6 +58,7 @@ import App from './App';
 // );
 // const painting = paintings[2];
 
+// here
 ReactDOM.render(
   <React.StrictMode>
     <App />
