@@ -41,6 +41,8 @@
 // //   );
 // // }
 
+import Container from './components/Container/Container';
+
 import userData from './components/Profile/user.json';
 import Profile from './components/Profile/Profile';
 
@@ -58,7 +60,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 function App() {
   return (
-    <div>
+    <Container>
       <Profile
         name={userData.name}
         tag={userData.tag}
@@ -72,7 +74,7 @@ function App() {
       <Statistics title="Upload stats" stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
-    </div>
+    </Container>
   );
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import './index.css';
 import App from './App';
+import 'modern-normalize/modern-normalize.css';
 
 // video repeta 1
 // const element1 = React.createElement('span', { children: 'hello' });
